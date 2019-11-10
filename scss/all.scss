@@ -1,0 +1,299 @@
+@import "reset";
+.wrap {
+    width: 400px;
+    margin: 100px auto;
+    position: relative;
+    background-image: url(../img/bg.png);
+    background-position: bottom center;
+    background-size: cover;
+}
+
+#reset {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    padding: 4px 10px 2px 10px;
+    background: #6C6C6C;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #ffffff;
+    box-shadow: 0px 0px 1px 1px #7B7B7B;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#reset.conNotClick {
+    background: #ffffff;
+    color: #6C6C6C;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#pokemon {
+    position: relative;
+    background-image: url(../img/Eevee.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 100px;
+    height: 100px;
+    margin: 20px 50px 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: help;
+    transition: all 1s;
+}
+
+#pokemon::before {
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 150px;
+    border-radius: 8px;
+    top: -40px;
+    left: -207px;
+    display: none;
+}
+
+#pokemon:hover.EeveeText::before {
+    background-image: url(../img/EeveeText.png);
+    background-position: center center;
+    background-size: contain;
+    display: block;
+}
+
+#pokemon:hover.VaporeonText::before {
+    background-image: url(../img/VaporeonText.png);
+    background-position: center center;
+    background-size: contain;
+    display: block;
+}
+
+#pokemon:hover.JolteonText::before {
+    background-image: url(../img/JolteonText.png);
+    background-position: center center;
+    background-size: contain;
+    display: block;
+}
+
+#pokemon:hover.FlareonText::before {
+    background-image: url(../img/FlareonText.png);
+    background-position: center center;
+    background-size: contain;
+    display: block;
+}
+
+#pokemon:hover.EspeonText::before {
+    background-image: url(../img/EspeonText.png);
+    background-position: center center;
+    background-size: contain;
+    display: block;
+}
+
+#pokemon:hover.UmbreonText::before {
+    background-image: url(../img/UmbreonText.png);
+    background-position: center center;
+    background-size: contain;
+    display: block;
+}
+
+.evolutionaryStones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.evolutionaryStone {
+    width: 45px;
+    height: 45px;
+    border: 1px dotted black;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin: 30px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stone {
+    position: fixed;
+    cursor: pointer;
+}
+
+#waterStone {
+    background-image: url(../img/WaterStone.png);
+    background-position: center center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s;
+}
+
+#waterStone:hover::before {
+    position: absolute;
+    content: "水之石";
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background: rgba(0, 0, 0, 0.3);
+    top: -22px;
+    left: 2px;
+}
+
+#waterStone:active::before {
+    display: none;
+}
+
+#fireStone {
+    background-image: url(../img/FireStone.png);
+    background-position: center center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s;
+}
+
+#fireStone:hover::before {
+    position: absolute;
+    content: "火之石";
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background: rgba(0, 0, 0, 0.3);
+    top: -22px;
+    left: 2px;
+}
+
+#fireStone:active::before {
+    display: none;
+}
+
+#thunderStone {
+    background-image: url(../img/ThunderStone.png);
+    background-position: center center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s;
+}
+
+#thunderStone:hover::before {
+    position: absolute;
+    content: "雷之石";
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background: rgba(0, 0, 0, 0.3);
+    top: -22px;
+    left: 2px;
+}
+
+#thunderStone:active::before {
+    display: none;
+}
+
+#shinyStone {
+    background-image: url(../img/ShinyStone.png);
+    background-position: center center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s;
+}
+
+#shinyStone:hover::before {
+    position: absolute;
+    content: "光之石";
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background: rgba(0, 0, 0, 0.3);
+    top: -22px;
+    left: 2px;
+}
+
+#shinyStone:active::before {
+    display: none;
+}
+
+#duskStone {
+    background-image: url(../img/DuskStone.png);
+    background-position: center center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s;
+}
+
+#duskStone:hover::before {
+    position: absolute;
+    content: "暗之石";
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background: rgba(0, 0, 0, 0.3);
+    top: -22px;
+    left: 2px;
+}
+
+#duskStone:active::before {
+    display: none;
+}
+
+#pokemon.stoneHide .stone {
+    opacity: 0;
+}
+
+#pokemon.stoneHide.stoneNone .stone {
+    display: none;
+}
+
+#pokemon.pokemonHide {
+    opacity: 0;
+}
+
+#pokemon.Vaporeon {
+    background-image: url(../img/Vaporeon.png);
+    opacity: 1;
+}
+
+#pokemon.Flareon {
+    background-image: url(../img/Flareon.png);
+    opacity: 1;
+}
+
+#pokemon.Jolteon {
+    background-image: url(../img/Jolteon.png);
+    opacity: 1;
+}
+
+#pokemon.Espeon {
+    background-image: url(../img/Espeon.png);
+    opacity: 1;
+}
+
+#pokemon.Umbreon {
+    background-image: url(../img/Umbreon.png);
+    opacity: 1;
+}
