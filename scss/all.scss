@@ -1,7 +1,7 @@
 @import "reset";
 .wrap {
     width: 400px;
-    margin: 100px auto;
+    margin: calc((100vh - 260px)/2) auto 0;
     position: relative;
     background-image: url(../img/bg.png);
     background-position: bottom center;
